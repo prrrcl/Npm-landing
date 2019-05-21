@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix {
+  clear: both;
+}
+.top-bar {
+  background-color: #c12127;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 10px 0;
+  height: 30px;
+}
+
+.top-bar a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.top-left {
+  float: left;
+}
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.search-bar {
+  width: 100%;
+  background: rgb(32, 101, 136);
+}
+input {
+  background: rgb(31, 82, 111);
+  padding: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 1em;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  outline: none;
+  color: white;
+}
+input:focus{
+  outline: none;
+}
+.search-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-self: center;
+}
+.search-bar img{
+  width: 100%;
+  max-width: 75px;
+  margin: 10px 15px;
+  display: flex;
+  align-self: center;
+  flex-grow: 1;
+}
+.search-bar form{
+  display: flex;
+  flex-grow: 2;
+  padding: 5px 25px;
+}
+.search-bar .user-options{
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  color: white;
+}
+.user-options a{
+  color: white;
+  text-decoration: none;
+}
+.sign-up-button {
+  background: rgb(240, 146, 51);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-top: 35px;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  align-self: flex-start;
+}
+.button-search{
+  background: rgb(31, 82, 111);
+  padding: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 40px;
+  margin-left: -1px;
+  
+}
+.button-search svg{
+  color:white;
+  width: 10px;
+}
+.user-options img{
+  max-width: 30px;
+  width: 100%;
+}
+.content-header{
+  background: url(/images/city-scape.svg) right bottom no-repeat rgb(35,96,130); 
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  font-size:1.5em;
+}
+.content-header .container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.content-header h1{
+  color: white;
+  margin: 15px 0;
+  font-weight: 100;
+}
+.content-header p{
+  color: white;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+#orgs{
+  background: rgb(39, 53, 71);
+  padding: 35px 0;
+  color: white;
+}
+#orgs .container{
+  display: flex;
+  flex-direction: row;
+}
+.left-content, .right-content{
+  width: 50%;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#orgs .sign-up-button{
+  background: rgb(203, 56, 55);
+  margin-top: 30px;
+}
+#orgs h1{
+  font-size: 2em;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+#orgs ul {
+  margin: 0 30px;
+}
+#orgs ul li{
+  margin: 30px 0;
+}
+#orgs ul li:last-child{
+  margin: 0;
+}
+.more-info{
+  color: white;
+  text-decoration:none;
+  margin:30px 0 0;
+}
+#whatisnpm{
+  background: url('/images/forklift.svg') rgb(41,128,185);
+  background-size: cover;
+  height: 450px;
+  padding: 90px 0 45px;
+  color:white;
+  box-sizing: border-box;
+}
+#whatisnpm h1{
+  font-weight: 100;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+#whatisnpm .sign-up-button{
+  background: rgb(49, 68, 88);
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px 0;
+}
+footer h1{
+  color:rgb(83, 88, 98);
+  margin: 0 0 25px;
+}
+footer p{
+  color:rgb(135, 145, 156);
+  margin: 0 0 35px;
+}
+.footer-items{
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.red{
+  color: rgb(208, 74, 73);
+}

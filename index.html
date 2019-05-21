@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>npm Landing Page - Adrián Porcel Navarro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="top-bar">
+      <div class="top-left">
+        <a class="heart" href="#">♥︎</a>
+        <span class="acronym">Neophobe Plebeian Mumpsimus</span>
+      </div>
+      <ul class="top-links">
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">documentation</a></li>
+        <li><a href="#">support</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+      <div class="search-bar">
+        <img src="images/npm-logo.png" alt="Logo npm" />
+        
+          <form action="/search">
+            <input type="text" placeholder="Find Packages..." />
+            <button type="submit" class="button-search"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg></button>
+          </form>
+         <div class="user-options">
+            <a href="#">Sign up</a>&nbsp;or&nbsp;<a href="#">Login</a>
+            <img src="images/bear-logo.png" alt="bear logo">
+         </div>
+        </div>
+      </div>
+      <div class="content-header">
+        <div class="container">
+            <h1>Building amazing things</h1>
+            <p>
+              npm is the package manager for JavaScript and the world's largest <br>
+              software registry. Discover packages of reusable code - and <br>assemble them
+              in powerful new ways.
+            </p>
+            <a href="#" class="sign-up-button">Sign up for npm</a>
+        </div>
+        
+        <!-- I tried to use city-scape.svg as background but it is corrupted :/ -->
+      </div>
+    </header>
+    <section id="orgs">
+      <div class="container">
+          <div class="left-content">
+              <img src="images/collaboration.svg" alt="Orgs image" />
+            </div>
+            <div class="right-content">
+              <h1>
+                npm Orgs is powerful <br> collaboration — for free
+              </h1>
+              <ul>
+                <li>Encourage code discovery and re-use within teams</li>
+                <li>Publish and control access to your own namespace</li>
+                <li>Manage public and private code with the same workflow</li>
+              </ul>
+              <a class="sign-up-button" href="#">Sign up for Orgs</a>
+              <a class="more-info" href="#">or Learn more about Orgs</a>
+            </div>
+      </div>
+      
+    </section>
+    <section id="whatisnpm">
+      <div class="container">
+          <div class="left-content">
+              <!-- The same problem with svg... :/ -->
+                      <h1>What is npm?</h1>
+                      <p>
+                        Use npm to install, share, and distribute code; <br />manage
+                        dependencies in projects; and <br />share & receive feedback with
+                        others.
+                      </p>
+                      <a href="#" class="sign-up-button">Install npm</a>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <h1>What can you make with 700,000 building blocks?</h1>
+      <p>
+        The npm registry hosts almost half a million of free, reusable code -
+        the largest software registry in the world.
+      </p>
+      <div class="footer-items">
+          <div class="footer-item">
+              <img src="images/binoculars.svg" alt="binoculars" />
+              <h3>Find</h3>
+              <p>
+                Libraries like <span class="red">jQuery</span>,
+                <span class="red">Bootstrap</span>, <span class="red">React</span>,
+                and <span class="red">Angular</span> and components from frameworks
+                such as <span class="red">Ember</span>.
+              </p>
+            </div>
+            <div class="footer-item">
+              <img src="images/mountain-flag.svg" alt="Mountain flag" />
+              <h3>Discover</h3>
+              <p>
+                Packages for mobile, IoT, front end, back end, robotics... everything
+                you need to start building amazing things.
+              </p>
+            </div>
+            <div class="footer-item">
+              <img src="images/backpack.svg" alt="Backpack" />
+              <h3>Build</h3>
+              <p>
+                Assemble packages like building blocks to quickly develop awesome new
+                projects.
+              </p>
+            </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>
