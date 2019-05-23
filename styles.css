@@ -109,7 +109,7 @@ input:focus{
   width: 100%;
 }
 .content-header{
-  background: url(/images/city-scape.svg) right bottom no-repeat rgb(35,96,130); 
+  background: url('./images/city-scape.svg') right bottom no-repeat rgb(35,96,130); 
   height: 450px;
   display: flex;
   flex-direction: column;
