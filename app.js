@@ -98,11 +98,11 @@ function esPosible([x, y]){
       console.log('Ups! You can\'t forward, there is obstacle there!');
       return false;
     }else{
-      if(grid[x + 1][y].includes('rover')){
+      if(grid[x - 1][y] === null){
+        return true;
+      }else if(grid[x - 1][y].includes('rover')){
         console.log('Ups! You can\'t forward, there is Rover there!');
         return false;
-      }else{
-        return true;
       }
     }
   }
@@ -111,11 +111,11 @@ function esPosible([x, y]){
       console.log('Ups! You can\'t forward, there is obstacle there!');
       return false
     }else{
-      if(grid[x + 1][y].includes('rover')){
+      if(grid[x][y - 1] === null){
+        return true;
+      }else if(grid[x][y - 1].includes('rover')){
         console.log('Ups! You can\'t forward, there is Rover there!');
         return false;
-      }else{
-        return true;
       }
     }
   }
@@ -124,11 +124,11 @@ function esPosible([x, y]){
       console.log('Ups! You can\'t forward, there is obstacle there!');
       return false;
     }else{
-      if(grid[x + 1][y].includes('rover')){
+      if(grid[x + 1][y] === null){
+        return true;
+      }else if(grid[x + 1][y].includes('rover')){
         console.log('Ups! You can\'t forward, there is Rover there!');
         return false;
-      }else{
-        return true;
       }
     }
   }
@@ -137,11 +137,11 @@ function esPosible([x, y]){
       console.log('Ups! You can\'t forward, there is obstacle there!');
       return false
     }else{
-      if(grid[x + 1][y].includes('rover')){
+      if(grid[x][y + 1] === null){
+        return true;
+      }else if(grid[x][y + 1].includes('rover')){
         console.log('Ups! You can\'t forward, there is Rover there!');
         return false;
-      }else{
-        return true;
       }
     }
   }
@@ -253,5 +253,7 @@ function comandos(commands){
     }   
     }
   }
- console.log(rovers[actualRover].travelLog)
+ if(rovers[actualRover].travelLog.length > 0){
+   console.log(rovers[actualRover].travelLog)
+ }
 }
